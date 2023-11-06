@@ -13,8 +13,8 @@ import (
 )
 
 type Tx struct {
-	Body   flow.TransactionBody
 	Result flow.TransactionResult
+	Body   flow.TransactionBody
 }
 
 func main() {
@@ -57,6 +57,7 @@ func main() {
 	blocks := map[uint64][]Tx{}
 
 	totalTx := 0
+	totalTxWithDups := 0
 	for _, headerList := range groupedHeaders {
 
 		var header flow.Header
@@ -77,17 +78,19 @@ func main() {
 				fmt.Printf("Height %d has two or more blockIds with transactions\n", header.Height)
 				fmt.Printf("%s = %d\n", header.ID().String(), txLength)
 				fmt.Printf("%s = %d\n", blockId, len(txList))
+				// adding the tx that we will then skip
+				totalTxWithDups = totalTxWithDups + len(txList)
 			}
 			txLength = len(txList)
 			header = hc
 		}
+		totalTxWithDups = totalTxWithDups + txLength
 		totalTx = totalTx + txLength
 		blocks[header.Height] = txList
 	}
 
 	fmt.Printf("total tx in badger %d\n", len(transactions))
 	fmt.Printf("total tx-result in badger %d\n", len(transactionResults))
-	fmt.Println("total blocks:", len(blocks))
 	fmt.Println("total tx:", totalTx)
 }
 
@@ -111,13 +114,7 @@ func GetHeaders(db *badger.DB) Headers {
 		valueErr := item.Value(func(val []byte) error {
 			umarshalErr := msgpack.Unmarshal(val, &header)
 			if umarshalErr != nil {
-
-				var test map[string]interface{}
-
-				msgpack.Unmarshal(val, &test)
-				fmt.Println("failed unpacking for block", blockID)
-				fmt.Println(test["Height"])
-
+				return umarshalErr
 			}
 			headers[blockID] = header
 
