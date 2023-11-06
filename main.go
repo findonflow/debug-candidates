@@ -79,7 +79,7 @@ func main() {
 				fmt.Printf("%s = %d\n", header.ID().String(), txLength)
 				fmt.Printf("%s = %d\n", blockId, len(txList))
 				// adding the tx that we will then skip
-				totalTxWithDups = totalTxWithDups + len(txList)
+				totalTxWithDups = totalTxWithDups + txLength
 			}
 			txLength = len(txList)
 			header = hc
