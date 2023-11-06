@@ -81,9 +81,12 @@ func main() {
 			txLength = len(txList)
 			header = hc
 		}
+		totalTx = totalTx + txLength
 		blocks[header.Height] = txList
 	}
 
+	fmt.Printf("total tx in badger %d\n", len(transactions))
+	fmt.Printf("total tx-result in badger %d\n", len(transactionResults))
 	fmt.Println("total blocks:", len(blocks))
 	fmt.Println("total tx:", totalTx)
 }
