@@ -71,20 +71,18 @@ func main() {
 		})
 
 		for _, hc := range headerList {
-
 			blockId = hc.ID().String()
 			txList = txByBlock[blockId]
+			totalTxWithDups = totalTxWithDups + len(txList)
 			if txLength > 0 && len(txList) > 0 {
 				fmt.Printf("Height %d has two or more blockIds with transactions\n", header.Height)
 				fmt.Printf("%s = %d\n", header.ID().String(), txLength)
 				fmt.Printf("%s = %d\n", blockId, len(txList))
 				// adding the tx that we will then skip
-				totalTxWithDups = totalTxWithDups + txLength
 			}
 			txLength = len(txList)
 			header = hc
 		}
-		totalTxWithDups = totalTxWithDups + txLength
 		totalTx = totalTx + txLength
 		blocks[header.Height] = txList
 	}
