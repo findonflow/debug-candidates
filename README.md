@@ -7,6 +7,233 @@
 
 ## Mainnet1 output for me
 ```
-
-
+Height 7936864 has two or more blockIds with transactions
+aba7dc19e82a9100bf7b4c772fac677b8fb779490774807385a9b213f1141ca4 = 1
+1b1a6e756d55b8d474c5335e0ea8e0180190c1d7c9e8a6781cd6411bb7a646bd = 1
+Height 8141253 has two or more blockIds with transactions
+8e4543a90ce8b49f0170c83c2eba03efa1f5eee735ddedc575322aa7b687006a = 1
+19368565a23ffd1d8523c96000b0441103efd879526fbeabebd723c16f506468 = 1
+Height 8190268 has two or more blockIds with transactions
+fe73b503a783914a23f834f6608bb9c4e65865e6e695a3c6bbfa0d9f5a2faca6 = 1
+64244702a3bf27c54298ebbf025341eecf7c0ab50cfeead658ec6b0406d0cdfe = 2
+Height 7754263 has two or more blockIds with transactions
+f7fdade574521dc687ea7a95ced20e88f9cde540affc4c0f0af67ebf9eb74e00 = 1
+446ff6a70d9d5cb26605cebf869e0d383a182920e5116b1e4765608d6b2e08ed = 2
+Height 8324848 has two or more blockIds with transactions
+d2393574ff09d46dcf6edcae238921606ce6c8ffd3fe3daa9ef4157dbb8bdb40 = 1
+c1a954516dff6543d9c324f665717e3a93d485bb32b8b96530a02232a3460cf2 = 2
+Height 8104385 has two or more blockIds with transactions
+428f0e7471db2fdc4c1b3f82d643cabf7649b1f23b7c452b13d61db4a9144a40 = 1
+07ef86e17b1b8ee9e0d635a5d12ae907fb27ac9c51acc279ab2706049efe2991 = 1
+Height 8194728 has two or more blockIds with transactions
+86bc7d3d0995d5b6ebf61c03c8bfd953709cc47bcbc6c814bd79ed4930516fa9 = 1
+45dac20c2967926f21528946da525b03f83a03f033f87fbbe663d43e968c153b = 5
+Height 8179065 has two or more blockIds with transactions
+f85d6083ecc958fd9c901f43be7ab7decb257952eb83c4fe6707c1095c1ee581 = 1
+8228a9d1e6093d1f2626fae76b04653ca8278f9fe04cd3ebd5b5f923144c14f1 = 5
+Height 7715094 has two or more blockIds with transactions
+9eda079d830133f75f5fd61824cc03e3bf6966b0886f2da8076d865584818a93 = 1
+3f8af67d846ff694932bf72575a3370496d14d481a5da4e11af7414ded117af0 = 3
+Height 8062556 has two or more blockIds with transactions
+c7ca79c07b4a53313c971673c23e5431200d138b0ed59a554e9362f79f05731a = 1
+b18131e94ada8637fce7ea6a680f97daedb734f91d92de8ed22c899b36cd39a5 = 4
+Height 8195986 has two or more blockIds with transactions
+ff418d363d5c42040a298355fecf0d8b6f143bc24919857363936ad22af96c7e = 1
+3eb49dd6a49f37a2d9a7bf5067a7580cc58e244e730316311a9d33f2fcf8ce15 = 1
+Height 8347912 has two or more blockIds with transactions
+81299cf86e37b7de24c2b19be82d19fcf484d853b92d0a8ea3f89c19f7964752 = 1
+39854eda761648459ce3075cdf031ed9fb9c6a0d127843d488fd4d2478fd05c6 = 2
+Height 8591951 has two or more blockIds with transactions
+d99801019e939ccb01fd1d302a82a013720833d98090a4c744e88a654439c9f9 = 1
+826388090325181318296ad82cedc9ebae8b1a50a1d9113a83b993b0839f23d8 = 1
+Height 8174518 has two or more blockIds with transactions
+8d9812f0465ae9aaf51f454a4b42c72e470d43202e34cf229be5c8e95f9fd785 = 2
+6afcdeade9359d9504feb37031ca144729740fafd2f262ac07f735d73b50d5fb = 1
+Height 8166904 has two or more blockIds with transactions
+fcc631e886a30f2460b80958b0e7c9a3aee580a72d6bec19d268a83641c556f6 = 1
+fb75a70651e746408f0edd401571d912f96f8cb680a6c283b217cbc87d1dc32d = 1
+Height 7726059 has two or more blockIds with transactions
+93dc6d30105ec6663522806f316896f8d5511221f3f17ce180fe92081df4c36a = 6
+740bf8b1dc9cc1b423a8b3a20ddb1f79f6193491e84ab2d0245ecf94609c5018 = 2
+Height 7808373 has two or more blockIds with transactions
+fd0a41207dedcfb86082f39a5b45e6a68f1d2e619f5c0c46605431aeecacf261 = 1
+6fbd310d20488401d2be7682975ce3bacb532bc7923cf05a78c38dc906de6dc6 = 1
+Height 7957120 has two or more blockIds with transactions
+ed20fd7145ed94f9190ce30c0bedadc1a57045be17b1b424e3fdc28bcb73dbfb = 1
+1e864be95ed857975ad841eebb4e47ad832d7028b2be5577d14ff265aacd9568 = 1
+Height 8029727 has two or more blockIds with transactions
+f87025c7f630667a9a8ed416f7516e6c562ff106a56f8d3a65d93e3847538dcb = 1
+bc399e8cfa02fdd05ff552cdc09cb04f2cc737a61f107fac7e6dcba1b382f1f2 = 2
+Height 7982148 has two or more blockIds with transactions
+439d7ada69186423fa89e8b857d267da7f3a8d63448ba0d06b199fd4a8da6c74 = 1
+0665f4db978c96d0eed6b099e74c621a3fd8be22f9e71e22b03ad49fdd6eb0a3 = 2
+Height 7978319 has two or more blockIds with transactions
+d286adcecd5d321af4a7186f54ad490df5b736b1ec842aa761647aed574c0763 = 1
+7c1ab858c2d440d159b85a76096f414b492b37a06b5b7ef65d164602ce275c1e = 1
+Height 7948545 has two or more blockIds with transactions
+e1d62139c89605b066f6fff02582d718faecd5714e09dc8366e7cf1bd28b4a4e = 1
+3728adb266095349a523a73e481afa119c10ad49c5f928dff075d34931247212 = 1
+Height 7886177 has two or more blockIds with transactions
+07c172084424bc160309bc64d893826afd06c70d8b3c945bc9e27e4ddddad291 = 4
+041dda9167224ecb71aa964d479db4e16ea69dd777e68a3ab4938a587115fa80 = 9
+Height 8182819 has two or more blockIds with transactions
+e7c1968742efe1592d8311f5f5835daf3848c1a30a34a0252289e301ca4a0f7f = 1
+b92ee7d57f46ce51584f16a50a747c1513f780885cb4b58638ab6022debf105d = 2
+Height 8135880 has two or more blockIds with transactions
+e336d8363bac44b63b8d09f8c93ba9b6d3f9be15af31fb0429ce3981889a665c = 1
+dbfd3312c84f8503cd29d579fb89ad9930291e4898d8a25acba54d4068e1cebe = 1
+Height 7727601 has two or more blockIds with transactions
+8dfb575c07cf44839f07d27eadabece15829e5e166a7e9e6c582175594e96566 = 4
+27716c45af68211502031ca5824ce27e12e79260017be1fd04adb6e2c15df4f3 = 3
+Height 7890208 has two or more blockIds with transactions
+eadd630b671b37386ebb4310a77122f72fdcdc715751b7694107c4fb93334788 = 1
+e3d615321bf2df4e1173f7a1977a875cc751d4fccd64eadddb87e64e54e4a397 = 1
+Height 7938450 has two or more blockIds with transactions
+daa44509155ffb3d534beef8f6359a88419cf4e9c63ab9924372377bd0384b49 = 1
+076bf9aa2dd6726125ee723b927b862550918333987bbc755c6bc357960fbc23 = 2
+Height 8177326 has two or more blockIds with transactions
+7854b963acd99b620d92308035ccb683be3b9078b4fcccfb685cf16b21757fa1 = 1
+6772c2a8499104c8cfd35842b914ad2bdf755d644c4394d561c9a71be5909862 = 5
+Height 8042581 has two or more blockIds with transactions
+e212db507f8817d11c494735b547c8eacb87d3c209efe4c8402851bb7402ee2b = 3
+4227f877868fa7fc931d0cb7d274ba73e520a3d57c6ae83327e939c2bd9d12dc = 1
+Height 8029551 has two or more blockIds with transactions
+e675c5398661a0b43d966856d371737eb5649e58abad92adc58a229959309468 = 1
+0bc26622e85df5738bcd6d84a1a15f091322dc3e37485af9c974bd173b5b4fd4 = 2
+Height 8098740 has two or more blockIds with transactions
+f2b940fc1537c2bf8e7000c6641ad85dbdcd06794039763da9f840264346b265 = 1
+5e3c7dbcf4dddf613149da0ec0f9e3230ef033fbdeacd0d3daae4d9e2a224fb7 = 1
+Height 7957971 has two or more blockIds with transactions
+938ac4691ea28229078a70e9038bea8b597c0912d5bd68c10d6c647404b572fe = 13
+3c49221e037134dc22aa4c0ca9580dc8bda246dac07a624afd802be3f82cce96 = 5
+Height 7878525 has two or more blockIds with transactions
+1e1d9634a713afbbe507cd6af86f195e9be3fa5f7b6196529a75954c4a80638f = 1
+03f085e1fecbda423853440d5e4044b2d5f9270eaced9367a8ffa7202fc002d5 = 1
+Height 8051244 has two or more blockIds with transactions
+b9d79e4525bf30ed5769df81283135d869503b11e904b593b98a93b4579fdb78 = 1
+6d59e3ccf5452c20aa66f101048d23bc0b3def790551271cd20574522aeecbf0 = 1
+Height 8141155 has two or more blockIds with transactions
+bf9873a8bae8871e74092a8e96088ad5a7c624c80026f9c71509828af236b27e = 2
+8bf720db7080d0cea6cc8d097322f82611b3f74b529bff6186c65fde5962c0aa = 1
+Height 7887692 has two or more blockIds with transactions
+dcf2758b58e9c8aa5c59cc841f9bbe601e4001f4ff6b7ee02af73abe11727683 = 2
+87b21a8475532aafac24ab2f16b901c8c050a7b210c52f57bab7aafcee9eeea5 = 4
+Height 8607173 has two or more blockIds with transactions
+a5eb49781d963b5ff0c022b53aa823546b56be7c5b554db93aac1a090fc0df80 = 14
+53be65e3d3e26b49386309aa77b529c8f15d9e8fab86dc94e48ff88d6c8ceeda = 37
+Height 8063500 has two or more blockIds with transactions
+bfc7d2b52fda24b57074a45bea9a6910fa7241fbe2d6fa34c8c24d6f10984475 = 1
+956ea1df0b7bf44c454b47f951d812b6bfd688bc5f8189048a332c725d4e573d = 1
+Height 8181801 has two or more blockIds with transactions
+9fbcaf13977909516b24c776935b6b504ffb8e32b5056bff1f0032d4d143f8a7 = 1
+74be56cd2b6f31f7e4b34f9f036ecaf0660b478f7e8ab6e54bab251d7355473d = 1
+Height 8171376 has two or more blockIds with transactions
+cbf9336fc958250949f106c3e8eec923e748096613103fda8fa0699e5bbfde74 = 1
+8deac20cb68281843e95dc243817fa27714ac343138e4a03c471495ca46c24db = 1
+Height 7904157 has two or more blockIds with transactions
+6f4658b423eedb32d50340cdffccd3d6b41fd79cee467abe59ecdd126682e32a = 1
+565d9c2fd4f830b229e7680d5060036551cc2318012491949d73cb6e9e377c72 = 1
+Height 8134991 has two or more blockIds with transactions
+9ff8e7eefe2a4de971051f8911aa3e142bed20acc67bf549e7c04c0faac2306e = 1
+492c32714de365901c6d40902f92a1d5c6f7cff14e1a2297758e4e37b3b65e9d = 1
+Height 8150249 has two or more blockIds with transactions
+ea7f2c7ffc3479ddb1aed7960bc6101c81b6725501bf964f835340c9e99d7832 = 2
+3c261e7d22d8525b8cf586919832107ca0bb312aeb53948f4d3b2f18e9c7ffaa = 3
+Height 7886528 has two or more blockIds with transactions
+a3ea4d27068c258630e06ea0006fbd7e7fea2156c2415c8cffbaf5362deb97d8 = 4
+0b87ca9cb62293d6854a612c18018d350bad3231cdfab802e5590f58da82822e = 4
+Height 7911072 has two or more blockIds with transactions
+77eb9b207825b6486549309f73c910b0afc7d4be6a6db9189c79b4acc0d19d87 = 1
+5da7b830210c925c965e1c50cdcf65e6398deb8db90c133c0112de79e5c10859 = 1
+Height 7947481 has two or more blockIds with transactions
+a16a4140690c0871dde283dac28a7afcfaf7a40a0d3300eb8de57519898674ac = 1
+75ec5d92de013c5a47efffa6c0cb7b54a4270703a7a6c600cd45537408360042 = 1
+Height 8001771 has two or more blockIds with transactions
+fdd38f5b95514d3be75be5514395157500d1e1800a96c23d4477f20ebb2ce095 = 2
+f4d0b353f7600a89a0eb759644b782316abca30a84c6783db82bff7f721a967b = 1
+Height 7898650 has two or more blockIds with transactions
+e765b4bef3693e3dfca994a1eb881f98d3edde4629d24b2d716e69424c4f9c71 = 1
+c88c8a6b0d8a3f98beb0991a1f75910c300c110e38fe721639aa537dcd1adeb0 = 2
+Height 8122121 has two or more blockIds with transactions
+f97e6d243d04f53bf6f2d1980d26ffb7eaa3199438a43cdbbe662d8f4613297d = 1
+4b24faa905350b15f57a7ec15321fb2bf271ab6a53000947e6917b8cb0890fbe = 2
+Height 7833067 has two or more blockIds with transactions
+ff243bbd02761c4532c16ca6a3d059089455d3c22a1c8d9bc8adcbf153441e3a = 1
+0f62d97de878a8ad2b06509224b94238f66189e610d6d858e26d551c29a22bea = 2
+Height 8444904 has two or more blockIds with transactions
+bfc2d7411af04f94425d8652951da8d0d8c99258a6285fd43ab0148e105f902b = 1
+816934e7cefa62e87b6187f883e8ef6076043e06cad2336d6aa84b47be520160 = 1
+Height 7890904 has two or more blockIds with transactions
+b5a33b7660e63d135f7b98d836ade45f289954e40b5f80bfd6b976d938195a15 = 2
+5ddb24cb7549c155d31d051423708dfc71e65840ec43798ddb743c0fa81e4f3a = 1
+Height 8416089 has two or more blockIds with transactions
+43b9a5a0ba836b24a26b53b021ab7f4b11767364517f90b41612f48084b4250c = 1
+24785ee6c2a1cd811dd597db6e9da73b469f6df402ca225350d32f9ff94266f7 = 1
+Height 8477866 has two or more blockIds with transactions
+fe1cf736817be72b66ab6003709914c23092ca72ed1638914d7e2cb718d34457 = 1
+4c8f328c830a74bd032b9f68ca69cf321dc84e6fcb76be899013863a6415915e = 1
+Height 8054631 has two or more blockIds with transactions
+b6f61ac42ef43e04edc428359fee8c940647b006217f2f8a427ddd2db9935d0e = 1
+75f8f725dd05800868f8ce01b3ae8e2871497488ca68eeed4e1fe818df8f14b5 = 1
+Height 8597223 has two or more blockIds with transactions
+e0d920f7bdbca8157acde1ecfcf7b1cc434e291ee34f6bbd0ed47a8ea738cd41 = 1
+79f339a6415677bb5c28bf4b597bc32354b911dfd1f8be897630b2b65b8a0e2b = 1
+Height 7822388 has two or more blockIds with transactions
+a36bb3f883e3605bb8ef6b3a12480081ce5b8ced98abae79b76679be80e20f54 = 3
+55c5222027ef28f7febb24d05e16484e3b378934ed091399ae11c34ee0c82231 = 6
+Height 7807630 has two or more blockIds with transactions
+b5de3a1123ee6d6b280dd0c787459570f179632451de3bc94d97fe7654f9ace7 = 2
+09306a3cd2b33c45b379137b0c3636f40502031227884ee589589b732f78c5f0 = 2
+Height 7957557 has two or more blockIds with transactions
+428fa66ab5a38d425ddc83313a9774c98af24791c7debd57f011a65cf4a17d00 = 1
+40e7b0e60d39686ced73388a5933bf1ca9bae81559554691687750268e563aa4 = 1
+Height 7851993 has two or more blockIds with transactions
+f7348292b97978c65e174aad26a611c7b5e9739359ea93ef8b1f04f89ea16969 = 4
+73859d6856cbcde24853710c20991ba15465c6499896ed1a5f27569fee488c42 = 1
+Height 7722223 has two or more blockIds with transactions
+719063f3b93c211a8c25a8fd18159e7fc2d21ed7ca439ccc447a82eb52da0463 = 14
+17659fa052a6867339c6e76ef1a203268d94132de080764de964c9d341b9a018 = 7
+Height 7885552 has two or more blockIds with transactions
+53f0ae88678bb9ae395585cb2b26f93514b13b36983396c0a81cad63948cf070 = 2
+31087f6a1425f6793ef8fb472d37cb27bc4e865bae9ad2d9244a06450f8495a5 = 15
+Height 8474633 has two or more blockIds with transactions
+f1c16866bfbe8663462c9464c8161762efda6f503d12d0d2bb4c6a4f61dbbe2d = 1
+22848cefde0ac56cdbd6ce30d0dea20e29272397e90fc4c23f3ee978af46c8bc = 1
+Height 8029560 has two or more blockIds with transactions
+e4518f74d55165683cd868da2d35c3ce9dae84b9db8b112a06cbab364cfd6056 = 1
+5af690f33d892afa56c7eae12e2ba0470a13f53521cb927dca9a609e05c9a4a7 = 1
+Height 7933237 has two or more blockIds with transactions
+a0a3c2a3f4e9a3955230d93e4ba1b3b8d379a9fa350c8cd5af542c9969668112 = 1
+3be90e4265aac99b8d89a9e70891f7e16d728f21649c5732b74d9f7f5a86c9cf = 1
+Height 8170475 has two or more blockIds with transactions
+fde4190abb171d1809c1814be82dbb69d50826c8da14b2e0be65d6fa6790e585 = 1
+c07cc013c035282a9aa36ac23b2761fa3d3ccfa0e39d551aa9782944cc3f14ec = 1
+Height 8059371 has two or more blockIds with transactions
+e72783b0a6fd5cf59629ead68f4977b233ddfa43dde8e23b72116efda89370ac = 1
+d0a9af48ce3daf833e4e1c23ee391f9a21317f6fd4a2b283e11a4b935dee2c2c = 1
+Height 8675353 has two or more blockIds with transactions
+defcad5daa28a0664d9b8e523edb3ee3179fffa9c0e702b0d64f4099d828187b = 1
+55455bc6f38b57330882ed5fb04ab9f17d83431b7a571499b1f2ffa844142711 = 1
+Height 7916767 has two or more blockIds with transactions
+89290f51f8247fd471e0854a05c514108c9a97ca38ca89313db5b64aeb672627 = 2
+87a1bd383988a1232c11011fb85b3544689ebd536709c14958581f54f06942bf = 2
+Height 7727226 has two or more blockIds with transactions
+69ec7552eeef9e876fffc03020d40f70f12672e018a1b5a96a308a03af03505a = 1
+2ad49790b5e495342b220c966f8e0864ace422210e6c4eadb9c2efe34895b973 = 11
+Height 8171335 has two or more blockIds with transactions
+e37804d00512681262f0aff8f6bbdbdc25a98060590f005b8c40bc108b8f674a = 1
+bf21aa34cf212f9419ed6106557023b87321d9e75991d7fb427221857864d6ee = 1
+Height 8436714 has two or more blockIds with transactions
+cccb463af8c53baf2fdbe8d9db24c8d8c18eb432a1f83c0db1edea5fcd17d1b3 = 2
+a3a462653804893270d8fdac12af1d550b3233bbb729948cc586cf3331c03903 = 1
+Height 7798195 has two or more blockIds with transactions
+adb62a335bbf2cc81cdaadadfbc7a6943162b07534f2a9c5bfa36b68336864c8 = 1
+125b00b195847d59b41287e64d4dec24fc331b82802afe778fa5694af43407a0 = 1
+Height 7870556 has two or more blockIds with transactions
+7e1269723f549df8b4870ab5c9ef49801a2ad331fdec75d2bd9a9e64b47b3dad = 1
+6dd4de413fc0c0cb9cc8b258153b78aaacf5364cbba6ab93ee023eb47dd156ba = 1
+total tx in badger 164046
+total tx-result in badger 164047
+total tx: 163727
+total tx with dup blocks: 164046
 ```
