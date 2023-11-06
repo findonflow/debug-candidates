@@ -4,6 +4,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"log"
+	"os"
 	"sort"
 
 	"github.com/dgraph-io/badger/v2"
@@ -18,9 +19,8 @@ type Tx struct {
 }
 
 func main() {
-	spork := "mainnet1"
-
-	db, err := badger.Open(badger.DefaultOptions(fmt.Sprintf("../../spork/%s", spork)))
+	path := os.Args[1]
+	db, err := badger.Open(badger.DefaultOptions(path))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -92,6 +92,7 @@ func main() {
 	fmt.Printf("total tx in badger %d\n", len(transactions))
 	fmt.Printf("total tx-result in badger %d\n", len(transactionResults))
 	fmt.Println("total tx:", totalTx)
+	fmt.Println("total tx with dup blocks:", totalTxWithDups)
 }
 
 type Headers = map[string]flow.Header
