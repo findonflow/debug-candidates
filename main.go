@@ -58,7 +58,7 @@ func main() {
 
 	totalTx := 0
 	totalTxWithDups := 0
-	for _, headerList := range groupedHeaders {
+	for height, headerList := range groupedHeaders {
 
 		var header flow.Header
 		var blockId string
@@ -70,7 +70,7 @@ func main() {
 			return headerList[i].View < headerList[j].View
 		})
 
-		for height, hc := range headerList {
+		for _, hc := range headerList {
 
 			blockId = hc.ID().String()
 			txList = txByBlock[blockId]
