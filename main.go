@@ -5,11 +5,9 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"sort"
 
 	"github.com/dgraph-io/badger/v2"
 	"github.com/onflow/flow-go/model/flow"
-	"github.com/samber/lo"
 	"github.com/vmihailenco/msgpack/v4"
 )
 
@@ -20,20 +18,19 @@ type Tx struct {
 
 func main() {
 	path := os.Args[1]
+	firstHeight := 7601063
+	lastHeight := 8742959
+
 	db, err := badger.Open(badger.DefaultOptions(path))
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer db.Close()
 
-	headers := GetHeaders(db)
+	headers, blockId := GetHeaders(db, uint64(lastHeight))
 
 	transactions := GetTransactions(db)
 	transactionResults := GetTransactionResults(db)
-
-	groupedHeaders := lo.GroupBy(lo.Values(headers), func(item flow.Header) uint64 {
-		return item.Height
-	})
 
 	txByBlock := map[string][]Tx{}
 	for txId, tx := range transactions {
@@ -54,48 +51,27 @@ func main() {
 		txByBlock[txr.BlockId] = old
 	}
 
-	blocks := map[uint64][]Tx{}
-
 	totalTx := 0
-	totalTxWithDups := 0
-	for _, headerList := range groupedHeaders {
+	for {
+		header := headers[blockId]
+		txList := txByBlock[blockId]
+		totalTx = totalTx + len(txList)
 
-		var header flow.Header
-		var blockId string
-		var txList []Tx
-		var txLength int
-
-		// we sort the headers to get the one with the largest view first
-		sort.SliceStable(headerList, func(i, j int) bool {
-			return headerList[i].View < headerList[j].View
-		})
-
-		for _, hc := range headerList {
-			blockId = hc.ID().String()
-			txList = txByBlock[blockId]
-			totalTxWithDups = totalTxWithDups + len(txList)
-			if txLength > 0 && len(txList) > 0 {
-				fmt.Printf("Height %d has two or more blockIds with transactions\n", header.Height)
-				fmt.Printf("%s = %d\n", header.ID().String(), txLength)
-				fmt.Printf("%s = %d\n", blockId, len(txList))
-				// adding the tx that we will then skip
-			}
-			txLength = len(txList)
-			header = hc
+		if header.Height == uint64(firstHeight) {
+			break
 		}
-		totalTx = totalTx + txLength
-		blocks[header.Height] = txList
+
+		blockId = header.ParentID.String()
 	}
 
 	fmt.Printf("total tx in badger %d\n", len(transactions))
 	fmt.Printf("total tx-result in badger %d\n", len(transactionResults))
 	fmt.Println("total tx:", totalTx)
-	fmt.Println("total tx with dup blocks:", totalTxWithDups)
 }
 
 type Headers = map[string]flow.Header
 
-func GetHeaders(db *badger.DB) Headers {
+func GetHeaders(db *badger.DB, lastBlockHeight uint64) (Headers, string) {
 	tx := db.NewTransaction(false)
 
 	it := tx.NewIterator(badger.DefaultIteratorOptions)
@@ -103,6 +79,7 @@ func GetHeaders(db *badger.DB) Headers {
 	prefix := make([]byte, 1)
 	prefix[0] = 30
 	headers := Headers{}
+	lastBlockId := ""
 	for it.Seek(prefix); it.ValidForPrefix(prefix); it.Next() {
 		var header flow.Header
 		item := it.Item()
@@ -116,6 +93,9 @@ func GetHeaders(db *badger.DB) Headers {
 				return umarshalErr
 			}
 			headers[blockID] = header
+			if header.Height == lastBlockHeight {
+				lastBlockId = blockID
+			}
 
 			return nil
 		})
@@ -125,7 +105,7 @@ func GetHeaders(db *badger.DB) Headers {
 		}
 	}
 
-	return headers
+	return headers, lastBlockId
 }
 
 func GetTransactionResults(db *badger.DB) map[string]IndexerTransactionResult {
