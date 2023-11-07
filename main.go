@@ -70,16 +70,24 @@ func main() {
 			return headerList[i].View < headerList[j].View
 		})
 
-		for _, hc := range headerList {
+		for height, hc := range headerList {
+
 			blockId = hc.ID().String()
 			txList = txByBlock[blockId]
 			totalTxWithDups = totalTxWithDups + len(txList)
-			if txLength > 0 && len(txList) > 0 {
-				fmt.Printf("Height %d has two or more blockIds with transactions\n", header.Height)
-				fmt.Printf("%s = %d\n", header.ID().String(), txLength)
-				fmt.Printf("%s = %d\n", blockId, len(txList))
-				// adding the tx that we will then skip
+			if height == 7878525 {
+				for _, tx := range txList {
+					fmt.Printf("block=%s tx=%s", blockId, tx.Result.TransactionID)
+				}
 			}
+			/*
+				if txLength > 0 && len(txList) > 0 {
+					fmt.Printf("Height %d has two or more blockIds with transactions\n", header.Height)
+					fmt.Printf("%s = %d\n", header.ID().String(), txLength)
+					fmt.Printf("%s = %d\n", blockId, len(txList))
+					// adding the tx that we will then skip
+				}
+			*/
 			txLength = len(txList)
 			header = hc
 		}
