@@ -61,7 +61,7 @@ func main() {
 
 		txIds := []string{}
 		for _, tx := range txList {
-			txIds = append(txIds, tx.Body.ID().String())
+			txIds = append(txIds, tx.Result.TransactionID.String())
 		}
 
 		slices.Sort(txIds)
