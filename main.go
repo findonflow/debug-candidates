@@ -65,7 +65,7 @@ func main() {
 		}
 
 		slices.Sort(txIds)
-		txString := strings.Join(txIds, ";")
+		txString := strings.Join(txIds, ",")
 		fmt.Println(header.Height, blockId, txString)
 		if header.Height == uint64(firstHeight) {
 			break
