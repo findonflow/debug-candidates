@@ -18,8 +18,10 @@ type Tx struct {
 
 func main() {
 	path := os.Args[1]
-	firstHeight := 7601063
-	lastHeight := 8742959
+	/*
+		firstHeight := 7601063
+		lastHeight := 8742959
+	*/
 
 	db, err := badger.Open(badger.DefaultOptions(path))
 	if err != nil {
@@ -27,7 +29,7 @@ func main() {
 	}
 	defer db.Close()
 
-	headers, blockId := GetHeaders(db, uint64(lastHeight))
+	// headers, blockId := GetHeaders(db, uint64(lastHeight))
 
 	transactions := GetTransactions(db)
 	transactionResults := GetTransactionResults(db)
@@ -51,22 +53,35 @@ func main() {
 		txByBlock[txr.BlockId] = old
 	}
 
-	totalTx := 0
-	for {
-		header := headers[blockId]
-		txList := txByBlock[blockId]
-		totalTx = totalTx + len(txList)
-
-		if header.Height == uint64(firstHeight) {
-			break
-		}
-
-		blockId = header.ParentID.String()
+	fmt.Println("block1")
+	block1 := txByBlock["3f8af67d846ff694932bf72575a3370496d14d481a5da4e11af7414ded117af0"]
+	for _, t := range block1 {
+		fmt.Println(t.Result.ID())
+	}
+	fmt.Println("block2")
+	block2 := txByBlock["9eda079d830133f75f5fd61824cc03e3bf6966b0886f2da8076d865584818a93"]
+	for _, t := range block2 {
+		fmt.Println(t.Result.ID())
 	}
 
-	fmt.Printf("total tx in badger %d\n", len(transactions))
-	fmt.Printf("total tx-result in badger %d\n", len(transactionResults))
-	fmt.Println("total tx:", totalTx)
+	/*
+		totalTx := 0
+		for {
+			header := headers[blockId]
+			txList := txByBlock[blockId]
+			totalTx = totalTx + len(txList)
+
+			if header.Height == uint64(firstHeight) {
+				break
+			}
+
+			blockId = header.ParentID.String()
+		}
+
+		fmt.Printf("total tx in badger %d\n", len(transactions))
+		fmt.Printf("total tx-result in badger %d\n", len(transactionResults))
+		fmt.Println("total tx:", totalTx)
+	*/
 }
 
 type Headers = map[string]flow.Header
