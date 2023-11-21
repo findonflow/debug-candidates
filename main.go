@@ -5,10 +5,12 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 
 	"github.com/dgraph-io/badger/v2"
 	"github.com/onflow/flow-go/model/flow"
 	"github.com/vmihailenco/msgpack/v4"
+	"golang.org/x/exp/slices"
 )
 
 type Tx struct {
@@ -57,6 +59,14 @@ func main() {
 		txList := txByBlock[blockId]
 		totalTx = totalTx + len(txList)
 
+		txIds := []string{}
+		for _, tx := range txList {
+			txIds = append(txIds, tx.Body.ID().String())
+		}
+
+		slices.Sort(txIds)
+		txString := strings.Join(txIds, ";")
+		fmt.Println(header.Height, blockId, txString)
 		if header.Height == uint64(firstHeight) {
 			break
 		}
