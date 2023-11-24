@@ -20,8 +20,8 @@ type Tx struct {
 
 func main() {
 	path := os.Args[1]
-	firstHeight := 7601063
-	lastHeight := 8742959
+	firstHeight := 8742959
+	lastHeight := 9737132
 
 	db, err := badger.Open(badger.DefaultOptions(path))
 	if err != nil {
@@ -73,10 +73,6 @@ func main() {
 
 		blockId = header.ParentID.String()
 	}
-
-	fmt.Printf("total tx in badger %d\n", len(transactions))
-	fmt.Printf("total tx-result in badger %d\n", len(transactionResults))
-	fmt.Println("total tx:", totalTx)
 }
 
 type Headers = map[string]flow.Header
