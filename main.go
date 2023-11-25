@@ -20,8 +20,8 @@ type Tx struct {
 
 func main() {
 	path := os.Args[1]
-	firstHeight := 8742959
-	lastHeight := 9737132
+	firstHeight := 9737133
+	lastHeight := 9992019
 
 	db, err := badger.Open(badger.DefaultOptions(path))
 	if err != nil {
