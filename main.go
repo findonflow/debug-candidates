@@ -2,15 +2,13 @@ package main
 
 import (
 	"encoding/hex"
-	"fmt"
 	"log"
 	"os"
-	"strings"
 
 	"github.com/dgraph-io/badger/v2"
 	"github.com/onflow/flow-go/model/flow"
+	"github.com/sanity-io/litter"
 	"github.com/vmihailenco/msgpack/v4"
-	"golang.org/x/exp/slices"
 )
 
 type Tx struct {
@@ -20,8 +18,6 @@ type Tx struct {
 
 func main() {
 	path := os.Args[1]
-	firstHeight := 9737133
-	lastHeight := 9992019
 
 	db, err := badger.Open(badger.DefaultOptions(path))
 	if err != nil {
@@ -29,50 +25,14 @@ func main() {
 	}
 	defer db.Close()
 
-	headers, blockId := GetHeaders(db, uint64(lastHeight))
+	//	headers, blockId := GetHeaders(db, uint64(lastHeight))
 
 	transactions := GetTransactions(db)
 	transactionResults := GetTransactionResults(db)
 
-	txByBlock := map[string][]Tx{}
-	for txId, tx := range transactions {
-		txr := transactionResults[txId]
-
-		t := Tx{
-			Body:   tx,
-			Result: txr.Result,
-		}
-
-		old, ok := txByBlock[txr.BlockId]
-		if !ok {
-			old = []Tx{t}
-		} else {
-			old = append(old, t)
-		}
-		//	fmt.Print(".")
-		txByBlock[txr.BlockId] = old
-	}
-
-	totalTx := 0
-	for {
-		header := headers[blockId]
-		txList := txByBlock[blockId]
-		totalTx = totalTx + len(txList)
-
-		txIds := []string{}
-		for _, tx := range txList {
-			txIds = append(txIds, tx.Result.TransactionID.String())
-		}
-
-		slices.Sort(txIds)
-		txString := strings.Join(txIds, ",")
-		fmt.Println(header.Height, blockId, txString)
-		if header.Height == uint64(firstHeight) {
-			break
-		}
-
-		blockId = header.ParentID.String()
-	}
+	txId := "5d90ab4fce481776e8fe9f5c47040bd843f32933ea96d5df626c57c113aaf33e"
+	litter.Dump(transactions[txId])
+	litter.Dump(transactionResults[txId])
 }
 
 type Headers = map[string]flow.Header
